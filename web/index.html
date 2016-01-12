@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SegmentDisplay</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  </head>
+
+  <body>
+    <div style="padding: 50px 100px">
+      <div style="width: 600px; height: 238px; position: relative; background: transparent url(images/control_panel.png) no-repeat top left">
+        <div style="position: absolute; left: 120px; top: 95px; width: 120px; height: 34px">
+          <canvas id="display" width="120" height="34"></canvas>
+        </div>
+        <div style="position: absolute; left: 334px; top: 78px; width: 20px; height: 20px">
+          <canvas id="pump_led" width="20" height="20"></canvas>
+        </div>
+        <div style="position: absolute; left: 365px; top: 78px; width: 20px; height: 20px">
+          <canvas id="light_led" width="20" height="20"></canvas>
+        </div>
+        <div style="position: absolute; left: 394px; top: 78px; width: 20px; height: 20px">
+          <canvas id="heater_led" width="20" height="20"></canvas>
+        </div>
+        <div style="position: absolute; left: 424px; top: 78px; width: 20px; height: 20px">
+          <canvas id="heat_led" width="20" height="20"></canvas>
+        </div>
+        <div style="position: absolute; left: 452px; top: 78px; width: 20px; height: 20px">
+          <canvas id="temp_led" width="20" height="20"></canvas>
+        </div>
+        <div style="position: absolute; left: 247px; top: 99px; width: 20px; height: 20px">
+          <input type="image" id="pump_button" src="images/pump.png" class="controlButton"></input>
+        </div>
+        <div style="position: absolute; left: 306px; top: 99px; width: 20px; height: 20px">
+          <input type="image" id="light_button" src="images/light.png" class="controlButton"></input>
+        </div>
+        <div style="position: absolute; left: 366px; top: 99px; width: 20px; height: 20px">
+          <input type="image" id="tempup_button" src="images/tempup.png" class="controlButton"></input>
+        </div>
+        <div style="position: absolute; left: 424px; top: 99px; width: 20px; height: 20px">
+          <input type="image" id="tempdown_button" src="images/tempdown.png" class="controlButton"></input>
+        </div>
+        <div style="position: absolute; left: 180px; top: 0px; width: 200px; height: 20px">
+            <p id="status_text">Status: Disconnected</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <script type="text/javascript" src="lib/js/base.js"></script>
+    <script type="text/javascript" src="lib/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="lib/js/util.js"></script>
+    <script type="text/javascript" src="lib/js/segment-display.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.websocket-0.0.1.js"></script>
+    <script type="text/javascript" src="lib/js/ws_events_dispatcher.js"></script>
+    <script type="text/javascript" src="js/led-display.js"></script>
+    <script type="text/javascript" src="js/control-button.js"></script>
+    <script type="text/javascript" src="js/hottub-api.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </footer>
+</html>
