@@ -67,6 +67,7 @@ The protocol 4-byte protocol contains the LED status (5-status LEDs, and 3 BCD d
 Thanks to the following projects for providing the underlying infrastructure for the software:
 
 * [Pigpio](http://abyz.me.uk/rpi/pigpio/)
+* [RxPY](https://github.com/ReactiveX/RxPY)
 * [Bitstring](https://github.com/scott-griffiths/bitstring)
 * [Tornado](https://www.tornadoweb.org/en/stable/)
 * [jQuery](https://jquery.com/)
