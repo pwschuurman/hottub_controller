@@ -57,10 +57,10 @@ The protocol 4-byte protocol contains the LED status (5-status LEDs, and 3 BCD d
 | -------- | -------- | -------- | -------- |
 | ----SSSS | S---AAAA | BBBBCCCC | -------- |
 
-S = Status
-A = Temperature (100's place)
-B = Temperature (10's place)
-C = Temperature (1's place)
+* S = Status
+* A = Temperature (100's place)
+* B = Temperature (10's place)
+* C = Temperature (1's place)
 
 #### References
 
