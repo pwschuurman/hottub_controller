@@ -19,13 +19,6 @@ LedDisplay.prototype.draw = function() {
         grd.addColorStop(1,this.colorOff);
         context.fillStyle = this.value ? grd : this.colorOff;
         context.fill();
-        
-        //context.lineWidth = 0;
-        //var grd=ctx.createRadialGradient(75,50,5,90,60,100);
-        //grd.addColorStop(0,"red");
-        //grd.addColorStop(1,"white");
-        //context.fill=grd;
-      // clear canva
 
       // finish drawing
       context.restore();

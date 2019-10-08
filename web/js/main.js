@@ -93,7 +93,6 @@ $(document).ready(function(){
     // Set up the on clicks
     $("#pump_button").click(function() {
         api.pressPumpButton();
-        // Wait 250ms
     });
     $("#light_button").click(function() {
         api.pressLightButton();
