@@ -31,7 +31,7 @@ The pinout is the following:
 
 Each of the buttons on the keypad correspond to a port. These are normally pulled up to high. When a button is pressed, these are drained low, with the following circuit:
 
-[Resistor](/readme/button.png)
+![Button Circuit](/readme/button.png)
 
 To drive these inputs, the Raspbery Pi operate a BJT switch, capable of driving the line low. The BJT selected (2N3904) has a CE voltage of 0.2 when fully saturated. According to the hot tub controller spec, voltage must be at most 1.0V, (0.2 * VCC), so this falls within the range. The BE voltage is 0.7 when saturated, providing 2.6V across the base resistor (Raspberry Pi provides 3.3V). A 2kOhm resistor was selected, allowing for a 1.3mA base current. The BJT has a gain of 10-20, allowing for the button circuit to drain 10-20mA, within spec.
 
@@ -41,7 +41,7 @@ Note that driving a button low requires the Raspberry Pi to drive a voltage high
 
 The controller communicates to the keypad, sending it the status of the LEDs at ~60Hz. This protocol is sent over SPI mode 3 (CPHA=1, CPOL=1). These lines are spliced to a 74HC4050N high-to-low level shifter, allowing for the Raspberry Pi to safely sniff these signals as they change.
 
-[Circuit Schematic](/readme/schematic.png)
+![Circuit Schematic](/readme/circuit_schematic.png)
 
 ### Software
 
@@ -66,7 +66,7 @@ C = Temperature (1's place)
 
 Thanks to the following projects for providing the underlying infrastructure for the software:
 
-[Pigpio][http://abyz.me.uk/rpi/pigpio/]
-[Bitstring][https://github.com/scott-griffiths/bitstring]
-[Tornado][https://www.tornadoweb.org/en/stable/]
-[jQuery][https://jquery.com/]
+* [Pigpio](http://abyz.me.uk/rpi/pigpio/)
+* [Bitstring](https://github.com/scott-griffiths/bitstring)
+* [Tornado](https://www.tornadoweb.org/en/stable/)
+* [jQuery](https://jquery.com/)
